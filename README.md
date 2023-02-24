@@ -65,8 +65,8 @@ The layout of nvim-lspconfig should look like this though:
 .\.github
 .\doc
 ```
-The `nvim-lspconfig\lua` folder is where you want to be. Inside this folder, you've
-got:
+Next, the `nvim-lspconfig\lua` folder is where you want to be. 
+Inside this folder, you've got:
 
 ```
 .\lspconfig\
