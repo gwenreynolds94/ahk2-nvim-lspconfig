@@ -95,5 +95,17 @@ as well.
 
 I like to create wrappers for my plugin setup functions. So I have something 
 akin to what's in the `lspconfig_setup.lua` file. If you placed it in nvim/lua, 
-then in your init.lua, you'd just need to add `require'lspconfig_setup'.setup_ahk2_ls()`.
-But, you know, adapt it to fit your own configurations.
+then in your nvim/init.lua, you'd just need to add 
+`require'lspconfig_setup'.setup_ahk2_ls()`.
+
+The reason I make a wrapper for it is so I can require my setup file and make changes 
+to the setup options before I call the setup function, just in case I want to change
+something from my init.lua instead of the required file, eg. »
+
+```lua
+local lspconf = require'lspconfig_setup'
+lspconf.ahk2_setup_options.init_options.FormatOptions.max_preserve_newlines = 3
+lspconf.setup_ahk2_ls()
+```
+
+It's totally unnecessary though, so you know, adapt it to fit your own configurations.
