@@ -7,7 +7,9 @@ it does work, so...
 Follow the 
 [instructions](https://github.com/thqby/vscode-autohotkey2-lsp#use-in-other-editors) 
 from thqby's extension README to download/install the language server and 
-place it wherever you want it to stay.
+place it wherever you want it to stay. If you already have an existing
+installation, the minimum version required is 1.9.1 
+(unless you have a really old version)
 
 ----
 
