@@ -34,7 +34,7 @@ folders are cleaned out when you reset Windows but everything else under
 `C:\Users\%USERNAME%` is kept, so Unix-style configuration locations help to keep 
 things working with minimal effort after resetting my pc. 
 
-But to sumize, the nvim-lspconfig folder will most likely be a descendant of 
+But to summarize, the nvim-lspconfig folder will most likely be a descendant of 
 `%LOCALAPPDATA\nvim-data\site\pack` with windows and 
 `~/.local/share/nvim-data/site/pack` with Unix. Mine is also under 
 `packer\start` since I installed it with Packer. You just have to find out 
