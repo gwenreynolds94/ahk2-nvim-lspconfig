@@ -11,8 +11,12 @@ L.ahk2_setup_options = {
         [[--stdio]]
     },
     init_options = {
-        AutoLibInclude = 'All'
-    }
+        AutoLibInclude = 'All',
+        FormatOptions = {
+            max_preserve_newlines = 1,
+            indent_string = [[    ]],
+        },
+    },
 }
 
 function L.setup_ahk2_ls()

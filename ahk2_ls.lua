@@ -43,7 +43,7 @@ return {
             FormatOptions = {
                 break_chained_methods = false,
                 ignore_comment = false,
-                indent_string = [[    ]],
+                indent_string = "\t",
                 keep_array_indentation = true,
                 max_preserve_newlines = 2,
                 ---@type
