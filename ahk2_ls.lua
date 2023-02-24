@@ -12,7 +12,7 @@ return {
             --- If node is in your path, you can just make this 'node', otherwise
             ---     specify the location of your node executable
             [[C:/Program Files/nodejs/node.exe]],
-            --- Change this to wherever you've saved your ahk2 lsp.
+            --- Change this to fit wherever you've saved your ahk2 lsp.
             [[C:/Users/gwen/.cache/ahk2-lsp/server/dist/server.js]],
             [[--stdio]]
         },
