@@ -97,7 +97,7 @@ require[[lspconfig]].<filename>.setup()
 You can just drop `ahk2_ls.lua` in `nvim-lspconfig/lua/lspconfig/server_configurations`. 
 But you may want to go ahead and change some values here so you don't have to do 
 it when you call the setup function. This is just creating a default configuration 
-for lspconfig to provide a setup function. There are some options for formatting, 
+so that lspconfig will provide a setup function. There are some options for formatting, 
 comment tags, which libraries to auto-include, etc. There are comments and annotations 
 in the `ahk2_ls.lua` file provided; just give it a look. 
 
