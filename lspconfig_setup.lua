@@ -2,6 +2,8 @@
 local L = {}
 ------------------------------------------------------------------
 
+
+--- An example of overriding the default settings provided by server configuration
 L.ahk2_setup_options = {
     cmd = {
         [[node]],
