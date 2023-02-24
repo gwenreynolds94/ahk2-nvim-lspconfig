@@ -13,7 +13,7 @@ return {
             ---     specify the location of your node executable
             [[C:/Program Files/nodejs/node.exe]],
             --- Change this to wherever you've saved your ahk2 lsp.
-            [[C:/Users/%USERNAME%/.cache/ahk2-lsp/server/dist/server.js]],
+            [[C:/Users/gwen/.cache/ahk2-lsp/server/dist/server.js]],
             [[--stdio]]
         },
         filetypes = { 'autohotkey' },
