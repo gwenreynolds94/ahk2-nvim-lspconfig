@@ -92,7 +92,8 @@ But you **have** to change some values to point to your server.
 There are also some options for formatting, comment tags, which libraries to 
 auto-include, etc. There are comments and annotations in the `ahk2_ls.lua` file 
 provided; just give it a look. You can set these options in the setup function
-as well.
+as well. This is just creating a default configuration for lspconfig to provide a
+setup function.
 
 ----
 
