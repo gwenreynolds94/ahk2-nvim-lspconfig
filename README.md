@@ -9,7 +9,9 @@ it does work, so...
 ### First, find the plugin folder for lspconfig.
 
 *For me*, this is at 
-`C:\Users\%USERNAME%\.local\share\nvim-data\site\pack\packer\start\nvim-lspconfig`
+`C:\Users\%USERNAME%\.local\share\nvim-data\site\pack\packer\start\nvim-lspconfig` 
+but the default location on Windows, *using Packer*, is 
+`%LOCALAPPDATA%\nvim-data\site\pack\packer\start\nvim-lspconfig`
 
 
 ##### TLDR; I use Unix-style configs and it's irrelevant, just locate the folder
