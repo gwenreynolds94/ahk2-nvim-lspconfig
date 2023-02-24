@@ -12,7 +12,7 @@ it does work, so...
 `C:\Users\%USERNAME%\.local\share\nvim-data\site\pack\packer\start\nvim-lspconfig`
 
 
-##### TLDR; I use Unix-style configs and here's some rambling
+##### TLDR; I use Unix-style configs and it's irrelevant
 
 I have my `XDG_CONFIG_HOME` and `XDG_DATA_HOME` environment variables set to 
 `C:\Users\%USERNAME%\.config` and `C:\Users\%USERNAME%\.local\share`, respectively. 
@@ -23,8 +23,9 @@ On Windows, Neovim will by default just use `%LOCALAPPDATA%` (equivalent of
 `%APPDATA%\..\Local`) for both `XDG_CONFIG_HOME` and `XDG_DATA_HOME`. Your AppData 
 folders are cleaned out when you reset Windows but everything else under 
 `C:\Users\%USERNAME%` is kept, so Unix-style configuration locations help to keep 
-things working with minimal effort after resetting my pc. But to sumize, the 
-nvim-lspconfig folder will most likely be a descendant of 
+things working with minimal effort after resetting my pc. 
+
+But to sumize, the nvim-lspconfig folder will most likely be a descendant of 
 `%LOCALAPPDATA\nvim-data\site\pack` with windows and 
 `~/.local/share/nvim-data/site/pack` with Unix. Mine is also under 
 `packer\start` since I installed it with Packer. You just have to find out 
@@ -88,6 +89,8 @@ to retrieve the function in your lua code:
 require[[lspconfig]].<filename>.setup()
 ```
 
+----
+
 ### Add a new server configuration
 
 You can just drop `ahk2_ls.lua` into `server_configurations` in the nvim-lspconfig
@@ -96,6 +99,8 @@ There are also some options for formatting, comment tags, which libraries to
 auto-include, etc. There are comments and annotations in the `ahk2_ls.lua` file 
 provided; just give it a look. You can set these options in the setup function
 as well.
+
+----
 
 ### Call setup function
 
