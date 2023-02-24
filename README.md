@@ -4,6 +4,11 @@ There may be a better way to do this without manually placing the server
 configuration in lspconfig's plugin folder, but this is what I've got and 
 it does work, so...
 
+Follow the 
+[instructions](https://github.com/thqby/vscode-autohotkey2-lsp#use-in-other-editors) 
+from thqby's extension README to download/install the language server and 
+place it wherever you want it to stay.
+
 ----
 
 ### First, find the plugin folder for lspconfig.
