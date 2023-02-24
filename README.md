@@ -11,6 +11,9 @@ it does work, so...
 *For me*, this is at 
 `C:\Users\%USERNAME%\.local\share\nvim-data\site\pack\packer\start\nvim-lspconfig`
 
+
+##### TLDR; I use Unix-style configs and here's some rambling
+
 I have my `XDG_CONFIG_HOME` and `XDG_DATA_HOME` environment variables set to 
 `C:\Users\%USERNAME%\.config` and `C:\Users\%USERNAME%\.local\share`, respectively. 
 I prefer things to be as portable as possible as I reset my computer semi-frequently
