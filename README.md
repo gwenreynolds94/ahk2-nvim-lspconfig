@@ -68,14 +68,6 @@ got:
         anakin_language_server.lua
         angularls.lua
         ansiblels.lua
-        antlerls.lua
-        apex_ls.lua
-        arduino_language_server.lua
-        asm_lsp.lua
-        astro.lua
-        awk_ls.lua
-        bashls.lua
-        beancount.lua
         ...
     ui\
         lspinfo.lua
