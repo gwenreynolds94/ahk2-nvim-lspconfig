@@ -27,6 +27,8 @@ nvim-lspconfig folder will most likely be a descendant of
 `packer\start` since I installed it with Packer. You just have to find out 
 where your plugins are installed according to your package manager.
 
+The layout of nvim-lspconfig should look like this though:
+
 ```
 .\lua
 .\plugin
