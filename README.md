@@ -80,7 +80,10 @@ got:
 ```
 lspconfig uses the files in the `server_configurations` folder to provide
 setup functions. The name of the file in `server_configurations` is what you use
-to retrieve the function in your lua code: `require[[lspconfig]].<filename>.setup()`
+to retrieve the function in your lua code: 
+```lua
+require[[lspconfig]].<filename>.setup()
+```
 
 ### Add a new server configuration
 
@@ -95,8 +98,10 @@ as well.
 
 I like to create wrappers for my plugin setup functions. So I have something 
 akin to what's in the `lspconfig_setup.lua` file. If you placed it in nvim/lua, 
-then in your nvim/init.lua, you'd just need to add 
-`require'lspconfig_setup'.setup_ahk2_ls()`.
+then in your nvim/init.lua, you'd just need to add:
+```lua
+require'lspconfig_setup'.setup_ahk2_ls()
+```
 
 The reason I make a wrapper for it is so I can require my setup file and make changes 
 to the setup options before I call the setup function, just in case I want to change
