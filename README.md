@@ -87,8 +87,8 @@ require[[lspconfig]].<filename>.setup()
 
 ### Add a new server configuration
 
-You can just drop `ahk2_ls.lua` into `server_configurations` in the nvim-lspconfig
-plugin folder. But you **have** to change some values to point to your server. 
+You can just drop `ahk2_ls.lua` in `nvim-lspconfig/lua/lspconfig/server_configurations`. 
+But you **have** to change some values to point to your server. 
 There are also some options for formatting, comment tags, which libraries to 
 auto-include, etc. There are comments and annotations in the `ahk2_ls.lua` file 
 provided; just give it a look. You can set these options in the setup function
