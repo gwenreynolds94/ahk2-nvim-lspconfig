@@ -20,51 +20,12 @@ installation, the minimum version required is 1.9.1
 but the default location on Windows, *using Packer*, is 
 `%LOCALAPPDATA%\nvim-data\site\pack\packer\start\nvim-lspconfig`
 
-
-##### TLDR; I use Unix-style configs and it's irrelevant, just locate the folder
-
-I have my `XDG_CONFIG_HOME` and `XDG_DATA_HOME` environment variables set to 
-`C:\Users\%USERNAME%\.config` and `C:\Users\%USERNAME%\.local\share`, respectively. 
-I prefer things to be as portable as possible as I reset my computer semi-frequently
-(with the option to keep my user data) to clean things up (mainly dependencies 
-for previous projects) and only keep what is necessary for my current workflows. 
-On Windows, Neovim will by default just use `%LOCALAPPDATA%` (equivalent of 
-`%APPDATA%\..\Local`) for both `XDG_CONFIG_HOME` and `XDG_DATA_HOME`. Your AppData 
-folders are cleaned out when you reset Windows but everything else under 
-`C:\Users\%USERNAME%` is kept, so Unix-style configuration locations help to keep 
-things working with minimal effort after resetting my pc. 
-
-But to summarize, the nvim-lspconfig folder will most likely be a descendant of 
+The nvim-lspconfig folder will most likely be a descendant of 
 `%LOCALAPPDATA\nvim-data\site\pack` with windows and 
 `~/.local/share/nvim-data/site/pack` with Unix. Mine is also under 
 `packer\start` since I installed it with Packer. You just have to find out 
 where your plugins are installed according to your package manager.
 
-The layout of nvim-lspconfig should look like this though:
-
-```
-.\lua
-.\plugin
-.\scripts
-.\test
-.\.codespellignorewords
-.\.editorconfig
-.\.gitignore
-.\.luacheckrc
-.\.stylua.toml
-.\CONTRIBUTING.md
-.\flake.lock
-.\flake.nix
-.\LICENSE.md
-.\Makefile
-.\neovim.yml
-.\nvim-lspconfig-scm-1.rockspec
-.\README.md
-.\selene.toml
-.\.git
-.\.github
-.\doc
-```
 Next, the `nvim-lspconfig\lua` folder is where you want to be. 
 Inside this folder, you've got:
 
